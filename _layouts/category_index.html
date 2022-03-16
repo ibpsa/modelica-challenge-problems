@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="small-intro">
+  <div class="container">
+    <h2>
+      {{page.category | capitalize}}
+    </h2>
+  </div>
+</section>
+<section class="blog">
+  <div class="container">
+    {% for post in site.posts %} {% if post.categories contains page.category %}
+
+    <div class="blog-container">
+      <div class="title-excerpt">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </div>
+      <div class="date-categories">
+        <div class="categories">
+          {% for category in post.categories%}
+          <div class="category">
+            <a href="/categories/{{category}}">{{ category }}</a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="date">
+          <p>{{ post.date | date_to_string }}</p>
+        </div>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+</section>

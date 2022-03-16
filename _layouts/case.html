@@ -1,0 +1,97 @@
+---
+layout: default
+---
+<article class="case" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="case-header">
+    <h1 class="case-title" itemprop="name headline">{{ page.model }}</h1>
+  </header>
+
+<p>{{ content }}</p>
+
+<p>
+  {{ page.summary }}
+</p>
+
+<table>
+  <tr>
+    <td>Model</td> <td><code>{{ page.model }}</code></td>
+    </tr>
+    <tr>
+      <td>Tool</td> <td>{{ page.tool }} {{ page.tool-version }}</td>
+    </tr>
+    <tr>
+      <td>OS</td> <td>{{ page.os }}</td>
+    </tr>
+  <tr valign="top"><td>Setup</td><td>
+<pre>{% for src in page.sources %}
+git clone {{ src['repository'] }}
+git checkout {{ src['commit'] }}
+{% endfor %}</pre>
+</td>
+</tr>
+<tr valign="top">
+  <td>Command</td><td>
+<pre>
+{{ page.command }}</pre>
+</td>
+</td>
+{% for file in page.files %}
+<tr valign="top">
+  <td>Files</td><td>
+{{ file['name'] }}<br/><br/>
+<pre>
+{{ file['content'] }}</pre>
+</td>
+</tr>
+{% endfor %}
+
+{% if page.log %}
+<tr valign="top">
+  <td>Log message</td>
+  <td>
+<pre>{{ page.log }}</pre>
+</td>
+</tr>
+{% endif %}
+
+{% if page.tool-issue-number %}
+<tr valign="top">
+  <td>Tool issue number</td>
+  <td>
+  {{ page.tool-issue-number }}
+</td>
+</tr>
+{% endif %}
+
+{% if page.tool-issue-link %}
+<tr valign="top">
+  <td>Tool issue link</td>
+  <td>
+  [{{ page.tool-issue-link }}]({{ page.tool-issue-link }})
+</td>
+</tr>
+{% endif %}
+
+
+{% if page.tool-status %}
+<tr valign="top">
+  <td>Tool status</td>
+  <td>
+  {{ page.tool-status }}
+</td>
+</tr>
+{% endif %}
+
+{% if page.library-issue-link %}
+<tr valign="top">
+  <td>Library issue</td>
+  <td>
+  [{{ page.library-issue-link }}]({{ page.library-issue-link }})
+</td>
+</tr>
+{% endif %}
+
+</table>
+
+</article>
