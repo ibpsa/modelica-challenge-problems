@@ -37,7 +37,7 @@ simulation backends, their solvers and diagnostic messages.
   </td>
   <td>
   {{ case.excerpt }}
-  <a href="{{ site.baseurl }}/{{ case.url }}">Details.</a>
+  <a href="{{ site.url }}/{{ case.url }}">Details.</a>
   </td>
   <td>
   {{ case.status }}
