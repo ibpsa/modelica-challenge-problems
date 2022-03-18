@@ -11,7 +11,7 @@ email: MWetter@lbl.gov
 description: > # this means to ignore newlines until "baseurl:"
   Modelica Challenge Problems
 domain: ibpsa.github.io
-baseurl: /project1-challenge-problems # the subpath of your site, e.g. /blog
+baseurl: /modelica-challenge-problems # the subpath of your site, e.g. /blog
 url: https://ibpsa.github.io # the base hostname & protocol for your site
 twitter_username:
 github_username:  ibpsa/project1
