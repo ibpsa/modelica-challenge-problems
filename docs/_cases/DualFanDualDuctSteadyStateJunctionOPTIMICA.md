@@ -7,7 +7,7 @@ sources:
     commit: d538de534a6f6c19311d70efb664ffdf6f5ca6a6
 tool: OPTIMICA
 tool-version: OCT-dev-r26446_JM-r14295
-tool-status: open
+status: open
 os: Linux Ubuntu 20.04
 command: |+
   cd modelica-buildings
@@ -174,7 +174,6 @@ log: |+
 
   Integrator time: 2.020292e+04
 
-status: open
 ---
 
 HVAC and building model that stalls during the simulation.

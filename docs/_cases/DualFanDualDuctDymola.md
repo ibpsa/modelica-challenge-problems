@@ -7,7 +7,7 @@ sources:
     commit: d538de534a6f6c19311d70efb664ffdf6f5ca6a6
 tool: Dymola
 tool-version: 2022x
-tool-status: work-around
+status: work-around
 discussion: https://github.com/ibpsa/modelica-challenge-problems/discussions/3
 os: Linux Ubuntu 20.04
 command: |+
@@ -29,7 +29,6 @@ log: |+
   WARNINGS have been issued.
   ERRORS have been issued.
 
-status: open
 ---
 
 Simulation that hangs. The dslog.txt file is empty and the simulation window does not show any diagnostics.

@@ -7,7 +7,7 @@ sources:
     commit: dbd21fa5937b262ecd6a6b155a51e5f9edfe3f62
 tool: OPTIMICA
 tool-version: OCT-dev-r26446_JM-r14295
-tool-status: open
+status: open
 os: Linux Ubuntu 20.04
 command: |+
   cd modelica-ibpsa
@@ -182,7 +182,6 @@ log: |+
   FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">The equations with initial scaling solved fine, re-scaled equations failed in <value name="block">"2"</value></Error>
   FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <DerivativeCalculationFailure category="error">Evaluating the ode derivatives failed.</DerivativeCalculationFailure>
 
-status: open
 ---
 
 Flow system in which the time integration stalls.

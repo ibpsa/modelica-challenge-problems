@@ -7,7 +7,7 @@ sources:
     commit: 60595a70f9830422198abff9190c84ead456b20c
 tool: OpenModelica
 tool-version: OpenModelica 1.19.0~dev-613-gd6e04c0
-tool-status: open
+status: open
 os: Linux Ubuntu 20.04
 command: |+
   cd modelica-buildings
@@ -118,7 +118,6 @@ log: |+
    assert            | info    | simulation terminated by an assertion at initialization
    255
 
-status: open
 ---
 
 The simulation fails.

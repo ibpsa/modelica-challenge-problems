@@ -7,7 +7,6 @@ sources:
     commit: d538de534a6f6c19311d70efb664ffdf6f5ca6a6
 tool: OpenModelica
 tool-version: OpenModelica 1.19.0~dev-613-gd6e04c0
-tool-status: open
 os: Linux Ubuntu 20.04
 command: |+
   cd modelica-buildings

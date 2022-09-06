@@ -7,7 +7,7 @@ sources:
     commit: dbd21fa5937b262ecd6a6b155a51e5f9edfe3f62
 tool: Dymola
 tool-version: 2022x
-tool-status: open
+status: open
 os: Linux Ubuntu 20.04
 command: |+
   cd modelica-ibpsa
@@ -72,7 +72,6 @@ log: |+
 
   ERROR: The simulation of IBPSA.Fluid.Examples.FlowSystem.Simplified1 FAILED
 
-status: open
 ---
 
 Flow system in which the nonlinear system of equation cannot be solved during the time integration.
