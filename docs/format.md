@@ -30,8 +30,9 @@ tool-issue-number: xxx                                  // Optional: The ticket 
                                                         // a support request with the tool developer
 tool-issue-link: xxx                                    // Optional: URL to the tool issue,
                                                         // such as link to a github issue
-tool-status:                                            // Status of tool developer: either closed or open
-
+tool-status:                                            // Status of tool developer: either closed, work-around or open
+discussion: xxx                                         // Optional: URL to dicussion or issue on
+                                                        // https://github.com/ibpsa/modelica-challenge-problems
 library-issue-link: xxx                                 // Optional: URL to the library issue,
                                                         // such as link to a github issue
 os: Linux Ubuntu 20.04                                  // Operating system

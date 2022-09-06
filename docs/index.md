@@ -24,6 +24,7 @@ simulation backends, their solvers and diagnostic messages.
 <th>Tool</th>
 <th>Summary</th>
 <th>Status</th>
+<th>Discussion</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -42,7 +43,9 @@ simulation backends, their solvers and diagnostic messages.
   <td>
   {{ case.status }}
   </td>
-
+  <td>
+  <a href="{{ case.discussion }}">{{ case.discussion | replace: "https://github.com/ibpsa/modelica-challenge-problems/", "" }}</a>
+  </td>
 </tr>
 {% endfor %}
 </tbody>

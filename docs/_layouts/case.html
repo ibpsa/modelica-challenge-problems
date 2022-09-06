@@ -92,6 +92,17 @@ git checkout {{ src['commit'] }}
 </tr>
 {% endif %}
 
+
+{% if page.discussion %}
+<tr valign="top">
+  <td>Discussion</td>
+  <td>
+   <a href="{{ page.discussion }}">{{ page.discussion }}</a>
+</td>
+</tr>
+{% endif %}
+
+
 </table>
 
 </article>
