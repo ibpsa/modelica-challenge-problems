@@ -1,7 +1,7 @@
 ---
 layout: case
 date-submitted:  2015-05-17
-model: IBPSA.Fluid.Examples.FlowSystem.Basic
+model: IBPSA.Fluid.Examples.FlowSystem.Simplified1
 sources:
   - repository: git@github.com:ibpsa/modelica-ibpsa.git
     commit: dbd21fa5937b262ecd6a6b155a51e5f9edfe3f62
