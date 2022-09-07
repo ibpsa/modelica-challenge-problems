@@ -7,7 +7,8 @@ sources:
     commit: dbd21fa5937b262ecd6a6b155a51e5f9edfe3f62
 tool: Dymola
 tool-version: 2022x
-status: open
+status: work-around
+discussion: https://github.com/ibpsa/modelica-challenge-problems/discussions/4
 os: Linux Ubuntu 20.04
 command: |+
   cd modelica-ibpsa
