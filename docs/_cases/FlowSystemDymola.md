@@ -7,7 +7,7 @@ sources:
     commit: dbd21fa5937b262ecd6a6b155a51e5f9edfe3f62
 tool: Dymola
 tool-version: 2022x
-status: work-around
+status: closed
 discussion: https://github.com/ibpsa/modelica-challenge-problems/discussions/4
 os: Linux Ubuntu 20.04
 command: |+
@@ -85,3 +85,7 @@ For example, the following command leads to a successful simulation:
   simulateModel("IBPSA.Fluid.Examples.FlowSystem.Simplified1",
     stopTime=1000, method="Cvode", tolerance=1e-08, resultFile="Simplified1");
 </pre>
+
+This works with Dymola 2024x.
+However, see also [`FlowSystemDymola-2`](FlowSystemDymola-2), which has a different commit which uses the pump
+model that has in the meantime been updated.
